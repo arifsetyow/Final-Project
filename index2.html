@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+
+</style>
+
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <a href="index.html">Home</a>
+  <a href="index2.html">Gallery</a>
+  <a href="index3.html">Buku Tamu</a>
+  
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">=</button>  
+  
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<div class="w3-card-4 w3-margin" style="width:auto;">
+<body>
+<br>
+<h2 style="text-align:center; font-family:courier; font-size:160%;" >Yogyakarta Gallery</h2>
+<br>
+
+
+<div class="row">
+  <div class="column">
+    <img src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://4.bp.blogspot.com/-chg-T8wfOaU/XKjXG5zBNqI/AAAAAAAAAxM/2aYOzWxk8nsxfAsCYWH4WFZmUUz3tJ5_QCLcBGAs/s1600/Desain%2Btanpa%2Bjudul%2B%252810%2529.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+    
+</body>
+</div>
+
+
+</html>
+
